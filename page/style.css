@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+}
+.header{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 85px;
+    padding: 0 3%;
+}
+img{
+    width: 200px;
+    height: 50px;
+    object-fit: contain;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: #1D4E84;
+}
+.nav-bar a:hover{
+    color: #2600ff;
+    text-decoration: underline ;
+    text-underline-offset: 8px;
+    
+}
+.telegram-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: #1D4E84;
+    color: white;
+    text-decoration: none;
+
+    padding: 13px 18px;
+    border-radius: 11px;
+
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.hero-section{
+    width: 100%;
+    height: 500px;
+    background-image: url("/page/team-1-ocean-blue/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    position: relative;
+}
+.title{
+    margin-top: 80px;
+    margin-left: 60px;
+    width: 600px;
+
+}
+.title h3{
+    font-size: 40px;
+    font-weight: bold;
+    color: #1D4E84; 
+    margin-bottom: 10px;
+}
+.title h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;   
+    margin-bottom: 10px;
+}
+.title p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color:#1D4E84 ;
+}
+
+.search-bar {
+    width: 780px;
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    
+    margin-top: 30px;
+}
+
+/* Search Input */
+.search-bar input {
+    flex: 1;
+    min-width: 0;
+    height: 40px;
+
+    padding: 0 12px;
+
+    border: 1px solid #9AB0C9;
+    border-radius: 8px;
+    outline: none;
+}
+
+.search-bar input:focus {
+    border-color: #1D4E84;
+}
+
+/* City Selection */
+.search-bar select {
+    width: 150px;
+    height: 40px;
+
+    padding: 0 8px;
+    border: 1px solid #9AB0C9;
+    border-radius: 8px;
+
+    color: #1D4E84;
+    background-color: white;
+}
+
+/* Search Button */
+.search-bar button {
+    height: 40px;
+    padding: 0 25px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #1D4E84;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #153B66;
+}
+
+
+
+.hero-card{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 70px;
+    align-items:  center;
+    padding: 0px 0px;
+    margin-top: 30px;
+}
+     
+.card{
+    width:283px;
+    height: 384px;
+    border:1px solid ;
+    border-radius:12px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 20px 20px;
+    gap: 5px;
+    box-shadow: 1px;
+    color: rgb(206, 206, 193);
+    background-color: rgb(247, 243, 243);
+    transition: 0.3s;
+}
+.card img{
+    width:240px;
+    height:180px;
+    object-fit:cover;
+    border:1px solid rgb(223, 221, 221);
+    border-radius: 12px;
+    transition: 0.3s;
+}
+.card img:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px 0px rgb(206, 206, 193);
+    
+}
+.card button{
+    width:240px;
+    height: 35px;
+    background-color: rgb(252, 249, 249);
+    border:1px solid #1D4E84;
+    border-radius: 12px;
+    transition: 0.3s;
+    color:#1D4E84;
+}
+.card button:hover{
+    transform:scale(1.01);
+    background-color:#1D4E84;
+    color: white;
+}
+.tittle{
+    display:flex;
+    flex-direction:column;
+    color:#1D4E84;
+}
+.tittle h3{
+    margin:5px 0px;
+}
+.tittle p{
+    margin:5px 0px;
+}
+.tittle span{
+    margin:5px 0px;
+    font-size: small;
+}
+.tag{
+  background: #1D4E84;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  width:80px;
+}
+.title-listings{
+    margin-top: 60px;
+    margin-left: 60px;
+}
+.title-listings h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #1D4E84; 
+    margin-bottom: 15px;
+}
+
+
+
+.features {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 42% 58%;
+  align-items: center;
+  background-color: #e6eef8;
+  padding: 25px 40px;
+  gap: 10px;  
+}
+.introduction {
+  text-align: left;
+  margin-left: 20px;
+}
+.introduction h1{
+  color: #143a66;
+  font-size: 36px;
+}
+.introduction p{
+  color: #143a66;
+}
+.features-cards {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0, 1fr));
+}
+.feature-card {
+  text-align: center;
+  padding: 15px 10px;
+  border-right: 1px solid #777;
+}
+.feature-card:last-child {
+  border-right: none;
+}
+.feature-card i {
+  font-size: 35px;
+  color: #143a66;
+  margin-bottom: 10px;
+}
+.feature-card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #143a66;
+  margin: 5px 0;
+}
+.feature-card p {
+  font-size: 12px;
+  color: #1D4E89;
+  line-height: 1.4;
+  margin: 5px 0;
+}
+@media (max-width: 768px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+  }
+  .feature-card {
+    border-right: none;
+    padding: 15px 10px;
+  }
+  .feature-card:nth-child(odd) {
+    border-right: 1px solid #777;
+  }
+}
+@media (max-width: 480px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+  .feature-card {
+    border-right: none !important;
+    border-bottom: 1px solid #777;
+  }
+}
+.section{
+    Width: 100%;
+    min-height: 580px;
+}
+.customer{
+    width: 100%;
+    height: 400px;
+    padding: 40px 60px;
+}
+.left{
+    display: flex;
+
+}
+.left img{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    border-radius: 12px;
+}
+  
+
+.testimonial-banner {
+    width: 100%;
+    margin: 30px auto;
+    padding: 20px 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    box-sizing: border-box;
+}
+
+/* Customer Image */
+.customer-image {
+    width: 23%;
+    height: 180px;
+    flex-shrink: 0;
+}
+
+.customer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+/* Testimonial Content */
+.testimonial-content {
+    width: 36%;
+}
+
+.testimonial-content h2 {
+    font-size: 24px;
+    color: #28558b;
+    margin-bottom: 8px;
+}
+
+.review {
+    font-size: 12px;
+    color: #55718f;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+/* Customer Information */
+.customer-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.customer-info img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.customer-info h4 {
+    font-size: 11px;
+    color: #28558b;
+    margin: 0;
+}
+
+.customer-info span {
+    font-size: 10px;
+    color: #55718f;
+}
+
+/* Dots */
+.dots {
+    display: flex;
+    gap: 7px;
+    margin-top: 15px;
+}
+
+.dots span {
+    width: 8px;
+    height: 8px;
+    background: #d1d7df;
+    border-radius: 50%;
+}
+
+.dots .active {
+    background: #000;
+}
+
+/* Room Promotion */
+.room-promotion {
+    width: 35%;
+    height: 180px;
+    border-radius: 8px;
+    background-image: url("/page/team-1-ocean-blue/room.png");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #9bb4ce;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.promotion-content span {
+    font-size: 10px;
+    color: #55718f;
+}
+
+.promotion-content h2 {
+    color: #28558b;
+    font-size: 20px;
+    margin: 3px 0 12px;
+}
+
+.promotion-content a {
+    display: inline-block;
+    background: #1D4E84;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .testimonial-banner {
+        flex-direction: column;
+        width: 95%;
+        padding: 20px;
+    }
+
+    .customer-image,
+    .testimonial-content,
+    .room-promotion {
+        width: 100%;
+    }
+
+    .customer-image {
+        height: 220px;
+    }
+
+    .room-promotion {
+        height: 200px;
+    }
+}
+
