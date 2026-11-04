@@ -216,7 +216,7 @@ img{
     gap: 20px;
     padding: 5px ;
     margin-top: 30px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .left{
     border-right: 1px;
@@ -258,16 +258,24 @@ img{
   color: #143a66;
   font-size: 12px;
 }
+.rule{
+  display: grid;
+  gap: 18px ;
+  flex-direction: column; 
+  gap: 12px; 
+  list-style: none; 
+  margin-top: 10px;
+}
 .amenities-title{
   display: grid;
   font-size: 20px;
   color: #143a66;
-  margin-top: 15px;
+  margin-bottom: 250px;
 }
 
 .amenities{
   display: grid;
-  gap: 18px 24px;
+  gap: 18px ;
   flex-direction: column; 
   gap: 12px; 
   list-style: none; 
@@ -293,15 +301,15 @@ img{
   font-size: 16px;
   color: #143a66;
 }
-.rule-title i{
+.rule1-title i{
   width: 20px;
   color: #143a66;
 }
-.rule-title span{
+.rule1-title span{
   font-size: 20px;
   color: #143a66;
 }
-.rule li{
+.rule1 li{
   font-size: 16px;
   color: #143a66;
   padding: 10px;

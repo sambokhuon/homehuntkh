@@ -11,34 +11,33 @@
   background-color: #e6eef8;
   font-family: 'poppins', sans-serif;
   gap: 20px;
-  padding: 30px 40px;
-  grid-template-columns: 1fr 2fr;
+  padding: 5px ;
+  margin-top: 30px;
+  grid-template-columns: 1fr 1fr;
 }
-.left{
-  border-right: 1px;
-}
+
 .title{
-  display: flex;
-  align-items:center;
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: #143a66;
+    display: flex;
+    align-items:center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #143a66;
 }
 .title i{
-  width: 30px;
+    width: 30px;
 }
 .title span{
-  font-size: 20px;
+    font-size: 20px;
 }
 .room-details{
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 .room{
-  display: flex;
-  align-items: center;
-  gap: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 .room i{
   width: 20px;
@@ -52,16 +51,26 @@
   color: #143a66;
   font-size: 12px;
 }
+.rule{
+  display: grid;
+  gap: 18px ;
+  flex-direction: column; 
+  gap: 12px; 
+  list-style: none; 
+  margin-top: 10px;
+  border-right: 1px solid #143a66;
+  margin-right: 40%;
+}
 .amenities-title{
   display: grid;
   font-size: 20px;
   color: #143a66;
-  margin-top: 15px;
+  margin-bottom: 250px;
 }
 
 .amenities{
   display: grid;
-  gap: 18px 24px;
+  gap: 18px ;
   flex-direction: column; 
   gap: 12px; 
   list-style: none; 
@@ -70,10 +79,9 @@
 
 .amenities li{
   display: flex;
-  align-items: center;
-               
+  align-items: center;       
   color: #143a66;
-  gap: 18px; 
+  gap: 15px; 
   font-size: 14px; 
 }
 
@@ -88,15 +96,15 @@
   font-size: 16px;
   color: #143a66;
 }
-.rule-title i{
+.rule1-title i{
   width: 20px;
   color: #143a66;
 }
-.rule-title span{
+.rule1-title span{
   font-size: 20px;
   color: #143a66;
 }
-.rule li{
+.rule1 li{
   font-size: 16px;
   color: #143a66;
   padding: 10px;
