@@ -4,43 +4,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Book a Visit</title>
+    <link rel="stylesheet" href="book.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="" alt="Pic">Home Hunt KH
-            </div>
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">Listing</a>
-                <a href="#">Book a Visit</a>
-            </div>
-            <div class="bt-icon">
-                <div class="icon"></div>
-                <div class="text"></div>
-            </div>
-        </div>
-    </header>
 
-    <main>
-        <div class="text-box">
+
+    <main-section>
+
+        <div class="book-visit">
+
+
             <h1>Schedule a Property Visits</h1>
             <p>Choose your preferred date and time slot. Our team will confirm your appointment shortly!</p>
+
         </div>
-        <div class="section">
-            <div class="box">
-                <div class="text">
-                    <span>SELECTED PROPOTYPE</span>
-                    <p>TOUL KORK SEN CHEY BARAMAEY TLEAK TERK</p>
-                    <div class="button">change</div>
+
+        <main class="booking-container">
+
+            <form class="booking-form">
+
+                
+
+                <div class="property-box">
+
+                    <span>SELECTED PROPOTYPE :</span>
+                    <h4>TOUL KORK SEN CHEY BARAMAEY TLEAK TERK</h4>
+
+                    <a href="#">Change</a>
                 </div>
+
+                <div class="section">
+
+                    <label class"section-title">TOUR MODE:</label>
+
+                    <div class="tour-options">
+
+                        <label class="tour-card">
+
+                            <input type="radio" name="tour-mode" value="in-person" checked>
+
+                            <div>
+                                <span>In-Person-Tour</span>
+                                <small>Meet agent on-location</small>
+                            </div>
+
+                        </label>
+
+                        <label class="tour-card">
+                            <input type="radio" name="tour" value="video">
+
+                            <div>
+
+                                <span>Video-Tour</span>
+                                <small>Live video call via telegram</small>
+
+                            </div>
+                        </label>
+
+                    </div>
+
+                </div>
+
+              
+
+                <div class="date-time">
+
+                    <div class="input-group">
+                        <label>SELECTED DATE</label>
+                        <input type="date" name="date" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>SELECTED TIME SLOT</label>
+
+                        <select name="time" required>
+                            <option value="09:00">Morning (09:00 AM)</option>
+                            <option value="10:00">Morning (10:00 AM)</option>
+                            <option value="14:00">Afternoon (02:00 PM)</option>
+                            <option value="15:00">Afternoon (03:00 PM)</option>
+                            <option value="17:00">Evening (05:00 PM)</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <hr>
+
+               
+
+                <div class="full-name">
+
+                    <label>FULL NAME</label>
+                    <input 
+                    type="text" 
+                    name="full-name" 
+                    placeholder="Ms. Chea Rotha" 
+                    required>
+
+                </div>
+
+               
+                <div class="contact-input">
+
+                    <div class="phone-phone">
+
+                        <label>Phone/Telegram number</label>
+                        <input 
+                        type="tel" 
+                        name="phone" 
+                        placeholder="012 345 678" 
+                        required>
+
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Email (Optional)</label>
+                    <input 
+                    type="email"
+                    name="email" 
+                    placeholder="example@gmail.com">
+                </div>
+
+                
+            <div class="input-group full-width">
+                <label>Message (Optional)</label>
+
+                <textarea
+                    name="message"
+                    placeholder="Message i love you!"></textarea>
             </div>
-        </div>
-    </main>
+
+          
+
+            <button type="submit" class="submit-btn">
+                <i class="fa-regular fa-paper-plane"></i>
+                Confirm Tour Booking
+            </button>
+
+
+            </form>
+        </main>
+
+
+    </main-section>
+
 </body>
 
-</html> 
-
+</html>
