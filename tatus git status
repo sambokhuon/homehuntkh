@@ -1,0 +1,14 @@
+user.name=sambo khuon
+user.email=sambo.kh2027@gmail.com
+init.defaultbranch=main
+pull.rebase=false
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/sambokhuon/homehuntkh.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+branch.main.vscode-merge-base=origin/main
+branch.feat/header.vscode-merge-base=origin/main
