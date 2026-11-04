@@ -3,79 +3,101 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: poppins, sans-serif;
+.body{
+  font-family: 'Poppins', sans-serif;
 }
-.features {
-  width: 100%;
-  box-sizing: border-box;
+.service-section{
   display: grid;
-  grid-template-columns: 42% 58%;
-  align-items: center;
   background-color: #e6eef8;
-  padding: 25px 40px;
-  gap: 10px;  
+  font-family: 'poppins', sans-serif;
+  gap: 20px;
+  padding: 30px 40px;
+  grid-template-columns: 1fr 2fr;
 }
-.introduction {
-  text-align: left;
+.left{
+  border-right: 1px;
 }
-.introduction h1{
-  color: #143a66;
-  text-align: center;
-  font-weight: 600;
-}
-.introduction p{
-  color: #143a66;
-  text-align: center;
-}
-.features-cards {
-  display: grid;
-  grid-template-columns: repeat(4,minmax(0, 1fr));
-}
-.feature-card {
-  text-align: center;
-  padding: 15px 10px;
-  border-right: 1px solid #777;
-}
-.feature-card:last-child {
-  border-right: none;
-}
-.feature-card i {
-  font-size: 35px;
-  color: #143a66;
-  margin-bottom: 10px;
-}
-.feature-card h3 {
+.title{
+  display: flex;
+  align-items:center;
   font-size: 20px;
-  font-weight: 500;
+  margin-bottom: 20px;
   color: #143a66;
-  margin: 5px 0;
 }
-.feature-card p {
+.title i{
+  width: 30px;
+}
+.title span{
+  font-size: 20px;
+}
+.room-details{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.room{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.room i{
+  width: 20px;
+  color: #143a66;
+}
+.room span{
+  font-size: 15px;
+  color: #143a66;
+}
+.room p{
+  color: #143a66;
   font-size: 12px;
-  color: #1D4E89;
-  line-height: 1.4;
-  margin: 5px 0;
 }
-@media (max-width: 768px) {
-  .features {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 25px;
-  }
-  .feature-card {
-    border-right: none;
-    padding: 15px 10px;
-  }
-  .feature-card:nth-child(odd) {
-    border-right: 1px solid #777;
-  }
+.amenities-title{
+  display: grid;
+  font-size: 20px;
+  color: #143a66;
+  margin-top: 15px;
 }
-@media (max-width: 480px) {
-  .features {
-    grid-template-columns: 1fr;
-  }
-  .feature-card {
-    border-right: none !important;
-    border-bottom: 1px solid #777;
-  }
+
+.amenities{
+  display: grid;
+  gap: 18px 24px;
+  flex-direction: column; 
+  gap: 12px; 
+  list-style: none; 
+  margin-top: 10px;
+}
+
+.amenities li{
+  display: flex;
+  align-items: center;
+               
+  color: #143a66;
+  gap: 18px; 
+  font-size: 14px; 
+}
+
+.amenities i{
+  font-size: 14px; 
+  color: #143a66; 
+  flex-shrink: 0; 
+ 
+}
+
+.amenities span{
+  font-size: 16px;
+  color: #143a66;
+}
+.rule-title i{
+  width: 20px;
+  color: #143a66;
+}
+.rule-title span{
+  font-size: 20px;
+  color: #143a66;
+}
+.rule li{
+  font-size: 16px;
+  color: #143a66;
+  padding: 10px;
 }
