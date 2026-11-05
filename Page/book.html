@@ -5,13 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book a Visit</title>
+    
     <link rel="stylesheet" href="book.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
 </head>
 
 <body>
+    <!--Header-->
 
+    <header class="header">
+        <a href="#" class="Logo">
+            <img src="/page/team-1-ocean-blue/logo.png" alt="Logo" class="logo">
+        </a>
 
-    <main-section>
+        <nav class="nav-bar">
+            <a href="#">Home</a>
+            <a href="#">Listings</a>
+            <a href="#">Book a Visit</a>
+        </nav>
+
+        <a href="https://t.me/khuon_sambo009" class="telegram-btn" target="_blank">
+            <i class="fa-brands fa-telegram"></i>
+            <span class="texttlg">Direct to Telegram</span>
+        </a>
+    </header>
+
+    <!--Main Section-->
+
+    <div class="container">
 
         <div class="book-visit">
 
@@ -25,7 +51,7 @@
 
             <form class="booking-form">
 
-                
+
 
                 <div class="property-box">
 
@@ -37,29 +63,25 @@
 
                 <div class="section">
 
-                    <label class"section-title">TOUR MODE:</label>
+                    <label class"section-title">Tour Mode:</label>
 
                     <div class="tour-options">
 
                         <label class="tour-card">
-
-                            <input type="radio" name="tour-mode" value="in-person" checked>
+                            <input type="radio" name="tour" value="in-person" checked>
 
                             <div>
                                 <span>In-Person-Tour</span>
                                 <small>Meet agent on-location</small>
                             </div>
-
                         </label>
 
                         <label class="tour-card">
                             <input type="radio" name="tour" value="video">
 
                             <div>
-
-                                <span>Video-Tour</span>
+                                <span>Video Tour</span>
                                 <small>Live video call via telegram</small>
-
                             </div>
                         </label>
 
@@ -67,17 +89,17 @@
 
                 </div>
 
-              
+
 
                 <div class="date-time">
 
                     <div class="input-group">
-                        <label>SELECTED DATE</label>
+                        <label>Selected Date</label>
                         <input type="date" name="date" required>
                     </div>
 
                     <div class="input-group">
-                        <label>SELECTED TIME SLOT</label>
+                        <label>Selected Time Slot</label>
 
                         <select name="time" required>
                             <option value="09:00">Morning (09:00 AM)</option>
@@ -92,64 +114,134 @@
 
                 <hr>
 
-               
 
-                <div class="full-name">
-
-                    <label>FULL NAME</label>
-                    <input 
-                    type="text" 
-                    name="full-name" 
-                    placeholder="Ms. Chea Rotha" 
-                    required>
-
-                </div>
-
-               
-                <div class="contact-input">
-
-                    <div class="phone-phone">
-
-                        <label>Phone/Telegram number</label>
-                        <input 
-                        type="tel" 
-                        name="phone" 
-                        placeholder="012 345 678" 
-                        required>
-
-                    </div>
-                </div>
 
                 <div class="input-group">
-                    <label>Email (Optional)</label>
-                    <input 
-                    type="email"
-                    name="email" 
-                    placeholder="example@gmail.com">
+
+                    <label>Full Name</label>
+                    <input type="text" name="fullname" placeholder="Ms. Chea Rotha" required>
                 </div>
 
-                
-            <div class="input-group full-width">
-                <label>Message (Optional)</label>
 
-                <textarea
-                    name="message"
-                    placeholder="Message i love you!"></textarea>
-            </div>
 
-          
+                <div class="contact-inputs">
 
-            <button type="submit" class="submit-btn">
-                <i class="fa-regular fa-paper-plane"></i>
-                Confirm Tour Booking
-            </button>
+                    <div class="input-group">
+                        <label>Phone / Telegram Number</label>
+                        <input type="tel" name="phone" placeholder="012 345 678" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email (Optional)</label>
+                        <input type="email" name="email" placeholder="example@gmail.com">
+                    </div>
+
+                </div>
+
+
+                <div class="input-group full-width">
+                    <label>Message (Optional)</label>
+
+                    <textarea name="message" placeholder="Message i love you!"></textarea>
+                </div>
+
+
+                <button type="submit" class="submit-btn">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    Confirm Tour Booking
+                </button>
 
 
             </form>
-        </main>
 
 
-    </main-section>
+   </div>
+
+    <!--Footer-->
+
+    <footer class="footer">
+
+
+        <div class="footer-container">
+
+
+            <div class="footer-brand">
+
+                <img src="/Page/logo-white.png" alt="Home Hunt KH Logo" class="logo">
+
+                <p class="slogan">
+                    Safe rooms, real photos,<br>
+                    clear prices
+                </p>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <div class="footer-item">
+                    <p class="title">Phone Number:</p>
+                    <p>012345678</p>
+                </div>
+
+                <div class="footer-item">
+                    <p class="title">Email:</p>
+                    <p>hello@homehuntkh.example</p>
+                </div>
+
+                <div class="footer-item">
+                    <p class="title">Address:</p>
+                    <p>Street 315, Boeung Kak 2, Toul Kork, Phnom Penh</p>
+                </div>
+
+            </div>
+
+
+            <div class="footer-schedule">
+
+                <div class="footer-item">
+                    <p class="title">Date:</p>
+                    <p>Monday to<br>Saturday</p>
+                </div>
+
+                <div class="footer-item">
+                    <p class="title">Time:</p>
+                    <p>8:00 to 18:00</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-divider"></div>
+
+
+        <div class="footer-social">
+
+            <a href="mailto:hello@homehuntkh.example" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Telegram">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="tel:012345678" aria-label="Phone">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+
+        </div>
+
+    </footer>
 
 </body>
 

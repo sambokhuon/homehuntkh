@@ -1,0 +1,151 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Schedule a Property Visit</title>
+
+    <link rel="stylesheet" href="test.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Schedule a Property Visits</h1>
+        <p>
+            Choose your preferred date and time slot.
+            Our team will confirm your appointment shortly!
+        </p>
+    </header>
+
+    <!-- Main Section -->
+    <main class="booking-container">
+
+        <form class="booking-form">
+
+            <!-- Property Information -->
+            <div class="property-box">
+
+                <div>
+                    <span>SELECTED PROPERTY :</span>
+                    <h4>TOUL KORK SEN CHEY BARAMAYEIT TLEAK TEK</h4>
+                </div>
+
+                <a href="#">Changes</a>
+
+            </div>
+
+            
+            <div class="section">
+
+                <label class="section-title">TOUR MODE</label>
+
+                <div class="tour-options">
+
+                    <label class="tour-card">
+                        <input type="radio" name="tour" value="in-person" checked>
+
+                        <div>
+                            <span>In-Person-Tour</span>
+                            <small>Meet agent on-location</small>
+                        </div>
+                    </label>
+
+                    <label class="tour-card">
+                        <input type="radio" name="tour" value="video">
+
+                        <div>
+                            <span>Video Tour</span>
+                            <small>Live video call via telegram</small>
+                        </div>
+                    </label>
+
+                </div>
+
+            </div>
+
+            <!-- Date and Time -->
+
+            <div class="date-time">
+
+                <div class="input-group">
+                    <label>SELECTED DATE</label>
+                    <input type="date" name="date" required>
+                </div>
+
+                <div class="input-group">
+                    <label>SELECTED TIME SLOT</label>
+
+                    <select name="time" required>
+                        <option value="09:00">Morning (09:00 AM)</option>
+                        <option value="10:00">Morning (10:00 AM)</option>
+                        <option value="14:00">Afternoon (02:00 PM)</option>
+                        <option value="15:00">Afternoon (03:00 PM)</option>
+                        <option value="17:00">Evening (05:00 PM)</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <hr>
+
+            
+            <div class="input-group full-width">
+                <label>Full Name</label>
+                <input
+                    type="text"
+                    name="fullname"
+                    placeholder="Ms. Chea Rotha"
+                    required>
+            </div>
+
+            
+            <div class="contact-inputs">
+
+                <div class="input-group">
+                    <label>Phone / Telegram number</label>
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="012 345 678"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label>EMAIL (Optional)</label>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="example@gmail.com">
+                </div>
+
+            </div>
+
+            
+            <div class="input-group full-width">
+                <label>Message (Optional)</label>
+
+                <textarea
+                    name="message"
+                    placeholder="Message i love you!"></textarea>
+            </div>
+
+            
+            <button type="submit" class="submit-btn">
+                <i class="fa-regular fa-paper-plane"></i>
+                Confirm Tour Booking
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
