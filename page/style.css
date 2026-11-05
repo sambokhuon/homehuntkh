@@ -6,13 +6,18 @@
 body{
     font-family: Arial,sans-serif;
 }
-.header{
+.header {
     justify-content: space-between;
     display: flex;
     align-items: center;
     width: 100%;
     height: 85px;
     padding: 0 3%;
+     
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color:white;
 }
 img{
     width: 200px;
@@ -29,7 +34,7 @@ img{
     color: #1D4E84;
 }
 .nav-bar a:hover{
-    color: #2600ff;
+    color: #382b81;
     text-decoration: underline ;
     text-underline-offset: 8px;
     
@@ -51,10 +56,16 @@ img{
     font-weight: bold;
     transition: 0.3s;
 }
+.telegram-btn i{
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    font-size: 20px;
+}
 .hero-section{
     width: 100%;
     height: 500px;
-    background-image: url("/page/team-1-ocean-blue/background.jpeg");
+    background-image: url("/page/team-1-ocean-blue/bggg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -62,28 +73,26 @@ img{
     display: flex;
     position: relative;
 }
-.title{
+.hero-section .title {
     margin-top: 80px;
     margin-left: 60px;
     width: 600px;
+}
 
-}
-.title h3{
+.hero-section .title h3 {
     font-size: 40px;
-    font-weight: bold;
-    color: #1D4E84; 
-    margin-bottom: 10px;
+    color: #1D4E84;
 }
-.title h1{
+
+.hero-section .title h1 {
     font-size: 60px;
-    font-weight: bold;
-    color: white;   
-    margin-bottom: 10px;
+    color: white;
 }
-.title p{
+
+.hero-section .title p {
     font-size: 20px;
-    margin-bottom: 30px;
-    color:#1D4E84 ;
+    color: #1D4E84;
+    margin-top: 20px;
 }
 
 .search-bar {
@@ -207,6 +216,11 @@ img{
     background-color:#1D4E84;
     color: white;
 }
+.tittle .tag{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 .tittle{
     display:flex;
     flex-direction:column;
@@ -217,6 +231,7 @@ img{
 }
 .tittle p{
     margin:5px 0px;
+    
 }
 .tittle span{
     margin:5px 0px;
@@ -434,7 +449,7 @@ img{
     width: 35%;
     height: 180px;
     border-radius: 8px;
-    background-image: url("/page/team-1-ocean-blue/room.png");
+    background-image: url("/page/team-1-ocean-blue/bggg.png");
     background-size: cover;
     background-position: center;
     border: 1px solid #9bb4ce;
@@ -445,12 +460,13 @@ img{
 }
 
 .promotion-content span {
-    font-size: 10px;
-    color: #55718f;
+    font-size: 15px;
+    color:  #1D4E84;
+    
 }
 
 .promotion-content h2 {
-    color: #28558b;
+    color: white;
     font-size: 20px;
     margin: 3px 0 12px;
 }
@@ -487,4 +503,117 @@ img{
         height: 200px;
     }
 }
+
+
+.footer {
+    width: 100%;
+    background-color: #28558B;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 25px 4.5% 25px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-contact,
+.footer-schedule {
+    min-width: 0;
+}
+
+.footer-brand{
+    width: 100%;
+}
+.logo{
+    display: block;
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+.slogan{
+    font-size: 12px;
+    line-height: 1.5;
+    margin-left: 45px;  
+}
+
+.footer-item{
+    margin-bottom: 10px;
+}
+.footer-item p{
+    font-size: 10px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+.footer-item .title{
+    font-weight: normal;
+}
+.footer-divider{
+    width:60%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 5px auto 8px;
+}
+.footer-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer-social a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    background-color: white;
+    color: #28558B;
+
+    text-decoration: none;
+    font-size: 11px;
+    transition: 0.3s
+}
+.footer-social a:hover{
+    background-color:#d8e8fa;
+    transform: translateY(-2px);
+}
+@media (max-width: 768px){
+      footer{
+        padding: 20px;
+      }
+      .footer-container{
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+      .footer-brand{
+        grid-column: auto;
+      }
+      .logo{
+        width: 160px;
+      }
+      .slogan{
+        font-size: 12px;
+      }
+      .footer-item a{
+        font-size: 12px
+;
+      }
+      .footer-social{
+        gap: 15px;
+      }
+      .footer-social a{
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+      }
+}
+
+
+
 
