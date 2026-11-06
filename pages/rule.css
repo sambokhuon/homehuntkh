@@ -5,6 +5,7 @@
 }
 .body{
   font-family: 'Poppins', sans-serif;
+  
 }
 .service-section{
   display: grid;
@@ -108,4 +109,9 @@
   font-size: 16px;
   color: #143a66;
   padding: 10px;
+}
+.picture{
+  width: 250px;
+  height: auto;
+  border: 1px solid black;
 }

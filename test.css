@@ -1,0 +1,236 @@
+`css
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E5EDF8;
+    color: #222;
+}
+
+/* Header */
+.header {
+    background-color: #28558B;
+    color: white;
+    text-align: center;
+    padding: 18px 15px 15px;
+}
+
+.header h1 {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 13px;
+}
+
+/* Booking Container */
+.booking-container {
+    width: 100%;
+    padding: 18px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Form */
+.booking-form {
+    background-color: white;
+    width: 100%;
+    max-width: 410px;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+/* Property Box */
+.property-box {
+    border: 1px solid #8BA9D0;
+    border-radius: 7px;
+    padding: 10px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.property-box span {
+    color: #28558B;
+    font-size: 8px;
+}
+
+.property-box h4 {
+    font-size: 8px;
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+.property-box a {
+    color: #28558B;
+    font-size: 9px;
+    text-decoration: none;
+}
+
+/* Section Title */
+.section-title,
+.input-group label {
+    display: block;
+    font-size: 9px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* Tour Options */
+.tour-options {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.tour-card {
+    width: 50%;
+    min-height: 43px;
+    border: 1px solid #A4B9D8;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.tour-card input {
+    accent-color: #28558B;
+    cursor: pointer;
+}
+
+.tour-card span {
+    display: block;
+    font-size: 10px;
+}
+
+.tour-card small {
+    display: block;
+    font-size: 7px;
+    color: #28558B;
+    margin-top: 2px;
+}
+
+/* Date and Time */
+.date-time {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #A4B9D8;
+    border-radius: 7px;
+    padding: 5px 9px;
+    font-size: 11px;
+    color: #527AAE;
+    outline: none;
+    background-color: white;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #28558B;
+}
+
+/* Divider */
+hr {
+    border: none;
+    border-top: 1px solid #999;
+    margin: 10px 0 12px;
+}
+
+/* Full Width */
+.full-width {
+    margin-bottom: 12px;
+}
+
+/* Contact Inputs */
+.contact-inputs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+
+.input-group textarea {
+    width: 100%;
+    height: 87px;
+    border: 1px solid #A4B9D8;
+    border-radius: 7px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    resize: vertical;
+    outline: none;
+}
+
+.input-group textarea::placeholder,
+.input-group input::placeholder {
+    color: #7895BD;
+}
+
+
+.submit-btn {
+    width: 100%;
+    height: 34px;
+    background-color: #1E416C;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn i {
+    margin-right: 5px;
+}
+
+.submit-btn:hover {
+    background-color: #28558B;
+}
+
+
+@media (max-width: 480px) {
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .header p {
+        font-size: 11px;
+    }
+
+    .booking-container {
+        padding: 15px 10px;
+    }
+
+    .booking-form {
+        padding: 15px;
+    }
+
+    .contact-inputs {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
